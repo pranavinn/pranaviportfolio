@@ -1,16 +1,25 @@
 import React from 'react';
 import './Skills.css';
+
 const skillsData = {
   Languages: ['Python', 'C++', 'Java', 'JavaScript'],
-  'Academic Excellence': ['Object-oriented design', 'Operating systems', 'Algorithms', 'Data structures', 'Complexity analysis'],
-  'Technical Expertise': ['Software Development', 'Web Development', 'Application Integration', 'Analytical Thinking', 'AR/VR'],
+  'Academic Excellence': ['Object-oriented design', 'Operating systems','Computre Networks', 'Algorithms', 'Data structures', 'Complexity analysis'],
+  'Technical Expertise': ['Software Development', 'Web Development', 'Machine Learning', 'Application Integration', 'Analytical Thinking', 'AR/VR'],
   Database: ['MySQL', 'MongoDB'],
   'Soft Skills': ['Excellent communication (Written & Verbal)', 'Quick Learner', 'Collaboration skills', 'Team player', 'Problem Solving']
 };
 
 const Skills = () => (
   <section id="skills">
-    <h2>Skills</h2>
+    <h2 style={{
+      fontSize: '3rem', // Increase font size
+      fontWeight: 'bold', // Make it bold
+      textAlign: 'center', // Center align it
+      letterSpacing: '1px', // Add a bit of spacing between letters
+      marginBottom: '2rem' // Add space below the heading
+    }}>
+      Skills
+    </h2>
     <div>
       {Object.keys(skillsData).map((category, index) => (
         <div key={index} style={{ textAlign: 'center', marginBottom: '2rem' }}>

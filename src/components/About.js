@@ -35,9 +35,8 @@ function About() {
             fontFamily: '"Roboto", sans-serif',
             lineHeight: '1.8'
           }}>
-            <li>Loves participating in Hackathons.Won the <strong>CBIT Hacktober Fest-A National Level Hackathon 2023💻</strong>.</li>
+            <li>Loves participating in Hackathons. Won the <strong>CBIT Hacktober Fest-A National Level Hackathon 2023</strong> 💻.</li>
             <li>I'm also a <strong>guitarist</strong> 😄🎸.</li>
-
           </ul>
         </div>
         <div className="about-content">
@@ -46,27 +45,29 @@ function About() {
           </div>
           <div className="about-details">
             <h3 style={{
-              fontSize: '2rem',
-              fontFamily: 'Segoe UI", Tahoma, Geneva, Verdana, sans-serif',
-            fontWeight: 'bold'
+              fontSize: '2.5rem',
+              fontFamily: '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif',
+              fontWeight: 'bold',
+              textAlign: 'center',
+              color: '#f2fad8',
             }}>Experience</h3>
             <ul style={{
-              fontSize: '1.1rem',
+              fontSize: '1rem',
               lineHeight: '1.6',
-              fontFamily: '"Roboto", sans-serif',
-              letterSpacing:'1px'
+              fontFamily: '"Poppins", sans-serif', // Updated font
+              textAlign: 'center'
             }}>
               <li>
                 <strong>Data Science Internship </strong> - Exposys Lab (Oct 2024 - Present)
-                <p>Predicting the profits made by different startups and comparing and finding the accuracy.</p>
+                <p style={{ fontFamily: '"Open Sans", sans-serif' }}>Analyzing startup profits and playing the accuracy game like a pro. It’s like predicting the future, but with numbers! 🔮📊</p>
               </li>
               <li>
                 <strong>Data Analyst Intern</strong> - Codegnan (July 2023 - Sept 2023)
-                <p>Prediction of Movie scores.</p>
+                <p style={{ fontFamily: '"Open Sans", sans-serif' }}>Used data to predict movie scores... basically, I’m the next film critic! 🍿🎬</p>
               </li>
               <li>
                 <strong>Web Developer Intern</strong> - EdSpread (July 2022 - Sept 2022)
-                <p>Creating a website to manage online books delivery system for a library.</p>
+                <p style={{ fontFamily: '"Open Sans", sans-serif' }}>Built a website for a library’s book delivery system. I made books travel faster than ever before! 📚💨</p>
               </li>
             </ul>
             {/* Download Resume Button */}

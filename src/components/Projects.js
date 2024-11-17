@@ -6,7 +6,7 @@ const projects = [
   {
     id: 1,
     name: 'Placement Portal',
-    description: 'Our Placement Portal, built with the MERN stack (MongoDB, Express.js, React, Node.js), connects students with job opportunities effortlessly...',
+    description: 'A seamless job connection hub, built with MERN stack, to help students land their dream jobs in no time! 🚀💼',
     image: 'project1.jpeg',
     githubLink: 'https://github.com/pranavinn/placement_portal',
     deployedLink: ''
@@ -14,44 +14,43 @@ const projects = [
   {
     id: 2,
     name: 'Internshaala Automation Tool',
-    description: 'Built with Node.js (Puppeteer), JavaScript, and Express.js, this tool automates internship applications on Internshaala...',
+    description: 'Automate your internship applications on Internshaala with this nifty Node.js & Puppeteer tool! 📈🖥️',
     image: 'project2.jpg',
     githubLink: 'https://github.com/pranavinn/Internshala_Automation_Tool',
     deployedLink: ''
   },
   {
-    id: 3, // Ensure the `id` is unique
+    id: 3,
     name: 'Dad Jokes',
-    description: 'The amazing kitten-filled Dad Jokes website, built with JavaScript, React Js, and CSS...',
+    description: 'Get your daily dose of hilarious, kitten-filled dad jokes with this fun React app! 😂🐱',
     image: 'Project3.jpeg',
     githubLink: 'https://github.com/pranavinn/dad-jokes',
-    deployedLink: 'https://amazing-kitten-248f62.netlify.app/' // Add your deployed link here
+    deployedLink: 'https://amazing-kitten-248f62.netlify.app/' 
   },
   {
-    id: 4, // Ensure the `id` is unique
+    id: 4,
     name: 'Path Finding Visualization',
-    description: 'A simple informative visualization build using HTML,CSS,JavaScript for visualization of algorithms for students.',
+    description: 'Watch pathfinding algorithms come to life with this fun and interactive visualization! 🧭🔍',
     image: 'project4.jpeg',
     githubLink: 'https://github.com/pranavinn/Path-Finding-Visualization',
-    deployedLink: 'https://pathvisualizationofgraphs.netlify.app/' // Add your deployed link here
+    deployedLink: 'https://pathvisualizationofgraphs.netlify.app/' 
   },
   {
-    id: 5, // Ensure the `id` is unique
+    id: 5,
     name: 'Community Food Redistribution',
-    description: 'The basic concept of this project Food Waste Management is to collect the excess/leftover food from donors such as hotels, restaurants, marriage halls, etc and distribute to the needy people.Made with PHP,HTML,CSS,JavaScript.s',
+    description: 'Fighting food waste by redistributing excess food to those in need. It’s a hunger-fighting mission! 🍽️💪',
     image: 'project5.jpeg',
     githubLink: 'https://github.com/pranavinn/Community_Food_Redistribution',
-    deployedLink: '' // Add your deployed link here
+    deployedLink: '' 
   },
   {
-    id: 5, // Ensure the `id` is unique
+    id: 6,
     name: 'Text Compression',
-    description: 'A DSA project,that lets us know the real life usage of Huffman Coding',
+    description: 'Explore the real-world magic of Huffman Coding with this DSA-powered text compression tool! 🔒💾',
     image: 'project6.jpeg',
     githubLink: 'https://github.com/pranavinn/Text-Compresser-Huffman-Coding-',
-    deployedLink: 'https://huffmancoding.netlify.app/' // Add your deployed link here
+    deployedLink: 'https://huffmancoding.netlify.app/' 
   },
-  // Add more projects as needed
 ];
 
 function Projects() {
@@ -75,7 +74,6 @@ function Projects() {
             <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="github-button">
               View on GitHub
             </a>
-            {/* Conditionally render the 'View Website' button only for Dad Jokes project */}
             {project.deployedLink && (
               <a href={project.deployedLink} target="_blank" rel="noopener noreferrer" className="github-button">
                 View Deployed Website
