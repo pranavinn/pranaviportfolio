@@ -1,0 +1,41 @@
+#contact {
+  background-color: #f9f9f9; /* Light background */
+  padding: 20px; /* Padding around the section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+  font-size: 24px; /* Font size for the heading */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+p {
+  font-size: 16px; /* Font size for paragraphs */
+  margin: 5px 0; /* Space between paragraphs */
+}
+
+a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Styling for social media links */
+.social-links {
+  display: flex;
+  gap: 30px; /* Increased space between icons */
+  margin-top: 20px; /* More space above the icons */
+  justify-content: center; /* Center the icons */
+}
+
+.social-links a {
+  color: #333; /* Icon color */
+}
+
+.social-links a:hover {
+  color: #007bff; /* Change color on hover */
+}

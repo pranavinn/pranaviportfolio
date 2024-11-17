@@ -1,13 +1,170 @@
-body {
+/* index.css */
+
+/* Reset and basic styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f0f2f5;
+  line-height: 1.6;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  color: #007ac9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Layout and responsive adjustments */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 1.8em;
+}
+
+header nav a {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ffd700;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 20px;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #f2fad8;
+  text-align: center;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* About Section */
+#about p {
+  font-size: 1.1em;
+}
+
+/* Projects Section */
+#projects ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+#projects li {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#projects li:hover {
+  transform: translateY(-10px);
+}
+
+#projects h3 {
+  font-size: 1.5em;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Skills Section */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+#skills li {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Contact Section */
+#contact p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+/* Button styles */
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header nav a {
+    font-size: 0.9em;
+  }
+
+  #skills ul, #projects ul {
+    grid-template-columns: 1fr;
+  }
 }

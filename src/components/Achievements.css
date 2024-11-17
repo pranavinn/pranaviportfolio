@@ -1,0 +1,34 @@
+.achievements-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+  }
+  
+  .achievements-section h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+  }
+  
+  .achievements-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .achievements-list li {
+    margin-bottom: 2rem;
+  }
+  
+  .achievements-list h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+  }
+  
+  .achievements-list p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+  }
+  

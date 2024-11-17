@@ -1,0 +1,78 @@
+.about-section {
+    padding: 50px;
+    background-color: #121212; /* Dark background color */
+    color: #f2fad8; /* Light text color */
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .about-photo {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-photo img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #ffffff; /* Optional: Add a border to the photo */
+  }
+  
+  .about-details {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .about-details h3 {
+    margin-top: 20px;
+    color: #f0f0f0; /* Slightly lighter color for headings */
+  }
+  
+  .about-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-details li {
+    margin: 10px 0;
+  }
+  .typing-effect {
+    display: inline-block; /* Keeps the typing effect */
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #ffd700; /* Adjust as needed */
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+    vertical-align: text-bottom; /* Aligns text vertically with the line */
+    border-right: 2px solid #ffd700; /* Blinking cursor */
+  }
+  
+  /* Typing animation */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  /* Blinking cursor */
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #ffd700; }
+  }
+  
